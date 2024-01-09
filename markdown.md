@@ -15,5 +15,5 @@ Chiedere all utente quanti anni ha:
  - stampare;
 
 Il prezzo del biglietto varia in base ai km percorsi:0.21€ al km:
-- 20% di sconto età < 18 anni;
-- 40% di sconto età > 65anni; 
+- 20% di sconto SE il viaggiatore ha un età < 18 anni;
+- 40% di sconto SE il viaggiatore ha un età > 65anni; 
