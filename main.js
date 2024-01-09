@@ -45,10 +45,10 @@ if (age < 18) {
 
 //stampato in html
 
-ticketPrice.innerText = ' Il prezzo del biglietto è' + ticket + '€';
+ticketPrice.innerText = ' Il prezzo del biglietto è ' + ticket.toFixed(2) + '€';
 
 //alert
-alert(' Il prezzo del biglietto è' + ticket + '€');
+alert(' Il prezzo del biglietto è ' + ticket.toFixed(2) + '€');
 
 
 
