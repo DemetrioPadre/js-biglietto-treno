@@ -17,28 +17,25 @@ console.log(age);
 
 
 //prezzo del biglietto
-const parzialTicket = kmNeeded * 0.21;
+const partialTicket = kmNeeded * 0.21;
 console.log(parzialTicket);
 
 //sconto rispetto all età
 
-let sconto20 = parzialTicket * 0.2;
-let sconto40 = parzialTicket * 0.4;
+let sconto20 = partialTicket * 0.2;
+let sconto40 = partialTicket * 0.4;
 
 
 let ticket = 0;
 
 //calcolo del prezzo del bigliettp
 if (age < 18) {
-    ticket = parzialTicket - sconto20;
-
-
-
+    ticket = partialTicket - sconto20;
 } else if (age > 65) {
-    ticket = parzialTicket - sconto40;
+    ticket = partialTicket - sconto40;
 
 } else {
-    ticket = parzialTicket;
+    ticket = partialTicket;
 
 }
 
