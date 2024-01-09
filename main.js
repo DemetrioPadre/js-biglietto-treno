@@ -2,20 +2,37 @@
 
 
 //Chiedere all utente i km da percorrere
-const kmNeeded = parseInt(prompt('numero di km'));
+const kmNeeded = prompt('numero di km che devi percorrere');
 console.log(kmNeeded);
 
-// //Chiedere all utente la sua età
-// const age1 = parseInt(prompt('età < 18'));
-// console.log(age1);
+//Chiedere all utente la sua età
+const age = prompt(' quanti anni hai?');
+console.log(age);
 
-// const age2 = parseInt(prompt('età > 65'));
 
 //Costo km al cent
-const cent = prompt(0.21);
+const cent = 0.21;
 console.log(cent);
 
-
 //prezzo del biglietto
-const ticket = prompt(kmNeeded * cent);
+const ticket = kmNeeded * cent;
 console.log(ticket);
+
+
+
+
+if (age < 18) {
+    const sconto = parseInt(prompt('ticket' - '20%'));
+
+} else if (age > 65) {
+    const sconto = parseInt(prompt('ticket' - '40%');
+
+} else {
+
+}
+
+// alert('il biglietto costa' + ticket);
+
+
+
+
