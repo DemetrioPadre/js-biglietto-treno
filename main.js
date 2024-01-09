@@ -1,4 +1,4 @@
-
+const ticketPrice = document.getElementById('main-title');
 
 
 //Chiedere all utente i km da percorrere
@@ -10,28 +10,48 @@ const age = prompt(' quanti anni hai?');
 console.log(age);
 
 
-//Costo km al cent
-const cent = 0.21;
-console.log(cent);
+// //Costo km al cent
+// const cent = 0.21;
+// console.log(cent);
+
+
 
 //prezzo del biglietto
-const ticket = kmNeeded * cent;
-console.log(ticket);
+const parzialTicket = kmNeeded * 0.21;
+console.log(parzialTicket);
+
+//sconto rispetto all età
+
+let sconto20 = parzialTicket * 0.2;
+let sconto40 = parzialTicket * 0.4;
 
 
+let ticket = 0;
 
-
+//calcolo del prezzo del bigliettp
 if (age < 18) {
-    const sconto = parseInt(prompt('ticket' - '20%'));
+    ticket = parzialTicket - sconto20;
+
+
 
 } else if (age > 65) {
-    const sconto = parseInt(prompt('ticket' - '40%');
+    ticket = parzialTicket - sconto40;
 
 } else {
+    ticket = parzialTicket;
 
 }
 
-// alert('il biglietto costa' + ticket);
+
+//stampato in html
+
+ticketPrice.innerText = ' Il prezzo del biglietto è' + ticket + '€';
+
+//alert
+alert(' Il prezzo del biglietto è' + ticket + '€');
+
+
+
 
 
 
